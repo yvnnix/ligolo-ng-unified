@@ -49,17 +49,6 @@ var (
 
 func Agent(flags *types.AgentFlags) {
 	var tlsConfig tls.Config
-	// var ignoreCertificate = flag.Bool("ignore-cert", false, "ignore TLS certificate validation (dangerous), only for debug purposes")
-	// var acceptFingerprint = flag.String("accept-fingerprint", "", "accept certificates matching the following SHA256 fingerprint (hex format)")
-	// var verbose = flag.Bool("v", false, "enable verbose mode")
-	// var retry = flag.Bool("retry", false, "auto-retry on error")
-	// var socksProxy = flag.String("proxy", "", "proxy URL address (http://admin:secret@127.0.0.1:8080)"+
-	// 	" or socks://admin:secret@127.0.0.1:8080")
-	// var serverAddr = flag.String("connect", "", "connect to proxy (domain:port)")
-	// var bindAddr = flag.String("bind", "", "bind to ip:port")
-	// var userAgent = flag.String("ua", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "+
-	// 	"AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36", "HTTP User-Agent")
-	// var versionFlag = flag.Bool("version", false, "show the current version")
 
 	flag.Usage = func() {
 		fmt.Printf("Ligolo-ng %s / %s / %s\n", version, commit, date)

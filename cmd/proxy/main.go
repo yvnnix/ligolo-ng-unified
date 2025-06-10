@@ -43,20 +43,6 @@ var (
 
 func Proxy(flags *types.ProxyFlags) {
 	var allowDomains []string
-	// var verboseFlag = flag.Bool("v", false, "enable verbose mode")
-	// var listenInterface = flag.String("laddr", "0.0.0.0:11601", "listening address (prefix with https:// for websocket)")
-	// var enableAutocert = flag.Bool("autocert", false, "automatically request letsencrypt certificates, requires port 80 to be accessible")
-	// var enableSelfcert = flag.Bool("selfcert", false, "dynamically generate self-signed certificates")
-	// var certFile = flag.String("certfile", "certs/cert.pem", "TLS server certificate")
-	// var keyFile = flag.String("keyfile", "certs/key.pem", "TLS server key")
-	// var domainWhitelist = flag.String("allow-domains", "", "autocert authorised domains, if empty, allow all domains, multiple domains should be comma-separated.")
-	// var selfcertDomain = flag.String("selfcert-domain", "ligolo", "The selfcert TLS domain to use")
-	// var versionFlag = flag.Bool("version", false, "show the current version")
-	// var hideBanner = flag.Bool("nobanner", false, "don't show banner on startup")
-	// var configFile = flag.String("config", "", "the config file to use")
-	// var daemonMode = flag.Bool("daemon", false, "run as daemon mode (no CLI)")
-	// var cpuprofile = flag.String("cpuprofile", "", "write cpu profile to `file`")
-	// var memprofile = flag.String("memprofile", "", "write memory profile to `file`")
 
 	flag.Usage = func() {
 		fmt.Printf("Ligolo-ng %s / %s / %s\n", version, commit, date)
